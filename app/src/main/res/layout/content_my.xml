@@ -8,62 +8,30 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_my">
 
-    <TextView
-        android:id="@+id/label_x"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:text="X:"/>
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:text="0.0"
-        android:id="@+id/accel_x"
-        android:layout_alignBottom="@+id/label_x"
-        android:layout_toRightOf="@+id/label_x"
-        android:layout_toEndOf="@+id/label_x" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:text="Y:"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/label_x"
-        android:layout_alignParentLeft="true"
+        android:text="Sync with Server"
+        android:id="@+id/buttonSync"
+        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:text="0.0"
-        android:id="@+id/accel_y"
-        android:layout_below="@+id/label_x"
-        android:layout_toRightOf="@+id/label_x"
-        android:layout_toEndOf="@+id/label_x" />
+        android:id="@+id/syncStatusText"
+        android:layout_alignBottom="@+id/buttonSync"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
 
-    <TextView
+    <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:text="Z:"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:text="0.0"
-        android:id="@+id/accel_z"
-        android:layout_alignTop="@+id/textView4"
-        android:layout_alignLeft="@+id/accel_y"
-        android:layout_alignStart="@+id/accel_y" />
-
+        android:text="Enable Speech"
+        android:id="@+id/checkBoxSpeech"
+        android:layout_below="@+id/buttonSync"
+        android:layout_alignParentStart="true"
+        android:checked="true" />
 
 </RelativeLayout>
